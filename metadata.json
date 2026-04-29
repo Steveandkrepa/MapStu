@@ -1,10 +1,5 @@
 {
-  "name": "GeoInteractive - 高中地理互动复习软件",
-  "description": "针对人教版高中地理考纲设计的交互式复习工具，支持中国地理深度复习与AI辅助教学。",
-  "requestFramePermissions": [],
-  "majorCapabilities": [
-    "INTERACTIVE_MAPS",
-    "EXAM_PREP",
-    "AI_TUTORING"
-  ]
+  "name": "GEOStudio - 沉浸式地理交互工作台",
+  "description": "基于 Google Earth 视觉理念设计的高中地理考纲交互式复习工具，支持可视化章节管理与空间成因动态演示。",
+  "requestFramePermissions": []
 }

@@ -7,23 +7,44 @@
 }
 
 body {
-  @apply antialiased;
+  @apply antialiased bg-[#050608];
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
 }
 
 #root {
   height: 100%;
 }
 
-/* Custom scrollbar for a cleaner look */
-::-webkit-scrollbar {
+/* Custom Scrollbar for Dark UI */
+.custom-scrollbar-dark::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar-dark::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+}
+.custom-scrollbar-dark::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.custom-scrollbar-dark::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Light Scrollbar for Modals/Admin */
+.custom-scrollbar::-webkit-scrollbar {
   width: 6px;
 }
-
-::-webkit-scrollbar-track {
-  @apply bg-transparent;
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f8fafc;
 }
-
-::-webkit-scrollbar-thumb {
-  @apply bg-slate-200 rounded-full hover:bg-slate-300 transition-colors;
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
 }
 

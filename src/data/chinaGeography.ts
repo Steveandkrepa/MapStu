@@ -10,6 +10,7 @@ export interface GeoPoint {
   type: 'concept' | 'fact' | 'exam_tip';
   visualUrl?: string;
   animationSteps?: string[];
+  mapFocus?: { x: number; y: number; zoom: number };
 }
 
 export interface RegionData {
@@ -47,7 +48,8 @@ export const CHINA_GEOGRAPHY_CHAPTERS: Chapter[] = [
         id: 'location',
         title: '地理位置',
         content: '半球位置：东半球、北半球。纬度位置：大部分位于北温带，小部分热带，无寒带。海陆位置：亚欧大陆东部，太平洋西岸。',
-        type: 'concept'
+        type: 'concept',
+        mapFocus: { x: 400, y: 300, zoom: 1 }
       },
       {
         id: 'size',
@@ -83,7 +85,8 @@ export const CHINA_GEOGRAPHY_CHAPTERS: Chapter[] = [
         content: '地势西高东低，呈三级阶梯状分布。第一级：青藏高原（海拔4000m以上）；第二级：高原与盆地（1000-2000m）；第三级：平原与丘陵（500m以下）。',
         type: 'concept',
         visualUrl: 'https://images.unsplash.com/photo-1542332213-9b5a5a3fad35?auto=format&fit=crop&q=80&w=800',
-        animationSteps: ['板块挤压抬升', '地势梯级形成', '大河由此东流']
+        animationSteps: ['板块挤压抬升', '地势梯级形成', '大河由此东流'],
+        mapFocus: { x: 200, y: 350, zoom: 2 }
       },
       {
         id: 'major-features',
@@ -130,7 +133,8 @@ export const CHINA_GEOGRAPHY_CHAPTERS: Chapter[] = [
         id: 'yangtze',
         title: '长江',
         content: '全长6300km，中国第一大河。发源于各拉丹冬，注入东海。被称为“水能宝库”和“黄金水道”。',
-        type: 'fact'
+        type: 'fact',
+        mapFocus: { x: 500, y: 380, zoom: 1.5 }
       },
       {
         id: 'yellow-river',
